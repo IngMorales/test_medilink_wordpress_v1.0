@@ -1,0 +1,397 @@
+@fontBody: 'Roboto', sans-serif;
+@fontTitle:  'Raleway', sans-serif;
+@bodySize: 16px;
+@h1Size: 48px;
+@h2Size: 36px;
+@h3Size: 24px;
+@h4Size: 20px;
+@primaryColor: #396cf0;
+@lightPrimaryColor: #3c70fa;
+@darkPrimaryColor: #2055e4;
+@secondaryColor:@darkPrimaryColor;
+@accentColor: #cecece;
+@primaryTextColor: #282828;
+@textPrimaryColor: #FFFFFF;
+.rgbaColorIn(@color, @opacity: 1) {
+    @result: rgba( red(@color), green(@color), blue(@color), @opacity);
+}
+.transition(@transition, @duration, @timingFunction: ease-in-out) {
+    -webkit-transition: all @duration @timingFunction;
+    -moz-transition: all @duration @timingFunction;
+    -ms-transition: all @duration @timingFunction;
+    -o-transition: all @duration @timingFunction;
+    transition: all @duration @timingFunction;
+}
+
+.transition-cubic(@transition, @duration, @timingFunction: cubic-bezier(0, 0, 0, 0)) {
+    -webkit-transition: all @duration @timingFunction;
+    -moz-transition: all @duration @timingFunction;
+    -ms-transition: all @duration @timingFunction;
+    -o-transition: all @duration @timingFunction;
+    transition: all @duration @timingFunction;
+}
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.transition (@transition, @duration, @timingFunction: ease-in-out) {
+    -webkit-transition: all @duration @timingFunction;
+    -moz-transition: all @duration @timingFunction;
+    -ms-transition: all @duration @timingFunction;
+    -o-transition: all @duration @timingFunction;
+    transition: all @duration @timingFunction;
+}
+
+.transition (@translate, @translateValue) {
+    -webkit-transform: @translate(@translateValue);
+    -moz-transform: @translate(@translateValue);
+    -ms-transform: @translate(@translateValue);
+    -o-transform: @translate(@translateValue);
+    transform: @translate(@translateValue);
+}
+.ul0() {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-------------------------------------    
+CSS INDEX
+===================================
+#. Defaults
+#. Topbar Layout
+#. Header Layout 1
+#. Header Layout 2
+#. Header Layout 3
+#. Header Layout 4
+#. Header Layout 5
+#. Header Responsive
+#. Footer - Preloader, Scroll to top, Copyright
+#. Widgets - Sidebar and Footer Widgets
+#. Custom Widgets
+#. Buttons
+#. Banner
+#. Pagination
+#. Contents
+#. Comments
+#. No Content
+#. Error 404
+#. Single medilink 
+#. Subscribe Area
+#. Responsive Style
+#. Woocommerce: Widgets
+#. Woocommerce: Owl Nav
+#. Woocommerce: Top Bar
+#. Woocommerce: Shop
+#. Woocommerce: Shop List View
+#. Woocommerce: Single Product
+#. Woocommerce: Cart
+#. Woocommerce: Checkout
+#. Woocommerce: Order received
+#. Woocommerce: My Account
+#. Woocommerce: Login/Register
+#. Woocommerce: Yith Wishlist
+#. Woocommerce: Yith QuickView
+#. Plugin: Contact Form 7
+#. Gutenberg Support
+---------------------------------------*/
+// Mixins
+.ul0() {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+@import "default";
+@import "style-defaults";
+@import "header";
+@import "footer";
+@import "widgets";
+@import "contents";
+@import "woocommerce";
+@import "plugins";
+
+
+/*-------------------------------------
+#. Gutenberg Support
+---------------------------------------*/
+.align-wrap {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+@media screen and (min-width: 900px) {
+    .align-wrap {
+        width: auto;
+        margin-left: calc(50% / .62 - 50vw);
+    }
+}
+.align-wrap .alignfull {
+    width: 100%;
+    margin: 0 0 0 auto;
+}
+@media only screen and (min-width: 768px) {
+    .alignfull {
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        width: auto;
+        max-width: 1000%;
+    }
+    .alignwide img,
+    .alignfull img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 768px) {
+.wp-block-image .aligncenter {
+    margin: 0;
+}
+}
+/*gutenberg with sidebar*/
+.has-sidebar .wp-block-cover.alignwide,
+.has-sidebar .wp-block-image.alignfull,
+.has-sidebar .wp-block-gallery.alignwide,
+.has-sidebar .wp-block-embed-vimeo.alignwide.wp-block-embed,
+.has-sidebar .alignwide.wp-block-embed {
+    margin-left: 0;
+    margin-right: 0;
+}
+.has-strong-magenta-background-color {
+    background-color: #a156b4;
+}
+.has-strong-magenta-color {
+    color: #a156b4;
+}
+.has-light-grayish-magenta-background-color {
+    background-color: #d0a5db;
+}
+.has-light-grayish-magenta-color {
+    color: #d0a5db;
+}
+.has-very-light-gray-background-color {
+    background-color: #eee;
+}
+.has-very-light-gray-color {
+    color: #eee;
+}
+.has-very-dark-gray-background-color {
+    background-color: #444;
+}
+.has-very-dark-gray-color {
+    color: #444;
+}
+.has-small-font-size {
+    font-size: 12px;
+}
+.has-large-font-size {
+    font-size: 36px;
+}
+.has-huge-font-size {
+    font-size: 48px;
+}
+.has-regular-font-size {
+    font-size: 16px;
+}
+.wp-block-image.is-resized {
+    
+}
+.wp-block-image.alignleft.is-resized {
+    margin-left: 0;
+    margin-right: 30px;
+}
+.wp-block-image.alignright.is-resized {
+    margin-left: 30px;
+    margin-right: 0;
+}
+.wp-block-separator {
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    margin: 50px 0;
+    text-align: left;
+    background: transparent;
+}
+.wp-block-button .wp-block-button__link{
+    color: @primaryColor !important;
+    display:inline;
+}
+.wp-block-button .wp-block-button__link:hover {
+    color: #fff !important;
+    background: @primaryColor;
+    cursor: pointer;
+}
+.wp-block-pullquote {
+    border-color: transparent;
+    border-width: 2px;
+    padding: 40px 0;
+}
+blockquote.wp-block-quote {
+    padding: 30px 63px;
+    margin: 45px 0px 45px;
+}
+blockquote.wp-block-quote cite {
+    font-size: 13px;
+    font-weight: 500;
+}
+blockquote.wp-block-quote.is-large {
+    padding: 30px 63px;
+    margin: 45px 0px 45px;
+}
+blockquote.wp-block-quote.is-large cite {
+    font-size: 13px;
+    font-weight: 500;
+}
+/* Main column width */
+.wp-block {
+    max-width: 720px;
+}
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: 1080px;
+}
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+pre {
+    background: #ffffff;
+}
+/*Button*/
+
+.wp-block-button__link,
+.medilink-button-1{
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid;
+  border-color: #396cf0;
+  color: #396cf0;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-weight: 700;
+  padding: 14px 20px;
+  border-radius: 4px;
+  transition: all 0.5s ease-out;
+}
+.wp-block-button__link:hover,
+.medilink-button-1:hover {
+  background-color: #2055e4;
+  color: #fff;
+}
+
+.wp-block-table td, 
+.wp-block-table th {
+    border: 1px solid #d7d7d7;
+}
+.wp-block-pullquote p {
+    font-size: 18px;
+}
+.wp-block-pullquote cite {
+    font-weight: 700;
+}
+.wp-block-image .alignleft.is-resized {
+    margin-top: 0;
+}
+
+.wp-block-image {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.wp-block-latest-posts.is-grid {
+    margin-left: 20px;
+}
+.wp-block-columns.has-2-columns .wp-block-column {
+    margin-bottom: 0;
+}
+@media only screen and (min-width: 600px) {
+.entry-content .wp-block-columns {
+    flex-wrap: nowrap;
+}
+}
+.wp-block-image .alignleft,
+.wp-block-image .alignright {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.wp-block-cover {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.entry-content .wp-block-cover {
+    margin-top: 0px;
+}
+.wp-block-cover.alignleft {
+    margin-top: 0;
+}
+.wp-block-gallery {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.wp-block-embed-vimeo.alignfull .wp-block-embed__wrapper {
+    margin: 32px 0;
+}
+
+.make-an-appointment {
+    .appointment-box-layout1 .select2-container--classic .select2-selection--single {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        border: 1px solid #dbe3e7;
+    }
+    .heading-layout5 {
+        margin-bottom: 46px;
+        
+    }
+    .appointment-box-layout1 .select2-container--classic .select2-selection--single .select2-selection__arrow b {
+        border-color: #2055e4 transparent transparent transparent;
+    }
+    .appointment-box-layout1 .select2-container--classic .select2-selection--single .select2-selection__rendered {
+        color: #7a7a7a;
+    }
+    .appointment-box-layout1 .wpcf7-form-control.form-control {
+        background-color: transparent !important;
+        color: #7a7a7a !important;
+        border: 1px solid #dbe3e7 !important;
+         border-radius: 0;
+    }
+
+
+    input.form-control::-webkit-input-placeholder,
+    textarea.form-control::-webkit-input-placeholder {
+        color: #7a7a7a !important;
+    }
+    input.form-control:-ms-input-placeholder,
+    textarea.form-control:-ms-input-placeholder {
+        color: #7a7a7a !important;
+    }
+    input.form-control:-moz-placeholder,
+    textarea.form-control:-moz-placeholder {
+        color: #7a7a7a !important;
+    }
+
+    .appointment-box-layout1 .form-group {
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+    }
+    .appointment-box-layout1 .form-group .item-btn.wpcf7-submit:hover {
+        border-color: #1c58ef;
+        background-color: #1c58ef;
+        color: #ffffff;
+    }
+    .appointment-box-layout1 .form-group .item-btn.wpcf7-submit {
+        box-shadow: none;
+        border: none;
+    }
+    .appointment-box-layout1 .form-group {
+        margin-bottom: 15px;
+        position: relative;
+        text-align: center;
+    }
+
+}
+

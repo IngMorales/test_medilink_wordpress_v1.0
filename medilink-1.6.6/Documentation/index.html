@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+			<title>Documentation - Medilink | Responsive Medical WordPress Theme</title>
+			<link rel="icon" href="images/favicon.png" sizes="32x32" />
+			<link rel="stylesheet" href="files/css/meanmenu.css" type="text/css" media="all">
+			<link rel="stylesheet" href="files/vendor/scrollbar/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+			<link rel="stylesheet" href="files/css/style.css" type="text/css" media="all">
+		</head>
+		<body>
+			<div id="wrapper">
+				
+				<div id="meanmenu"></div>
+				<div class="col-left">
+					<div class="left-menu" style="padding-bottom: 30px;">
+						<h2 style="padding-top: 20px;"><img alt="" src="images/logo.png"></h2>
+						<ul>
+							<li><a href="#requirements">Requirements</a></li>
+							<li><a href="#installation">Theme Installation</a></li>
+							<li><a href="#demo">Importing Demo contents</a></li>
+								<ul>
+									<li><a href="#demo">Automatic Import</a></li>
+									<li><a href="#demo-manual">Manual Import</a></li>
+								</ul>
+							<li>
+								<a href="#features">Theme Features</a>
+								<ul>
+									<li><a href="#colors">Sitewise Colors</a></li>
+									<li><a href="#logo">Logo</a></li>
+									<li><a href="#preloader">Preloader</a></li>
+									<li><a href="#toparrow">Back to Top Arrow</a></li>
+									<li><a href="#header">Header and Top Bar</a></li>
+									<li><a href="#menu">Menu</a></li>
+									<li><a href="#megamenu">Multi Column Menu</a></li>
+									
+									<li><a href="#footer">Footer</a></li>
+									<li><a href="#typo">Typography</a></li>
+									<!-- <li><a href="#socials">Contacts & Socials</a> -->
+								</ul>
+							</li>
+							<li><a href="#layouts">Layout Settings</a></li>
+							<li><a href="#post-single">Layout Settings for Individual Post Types</a></li>
+							<li><a href="#blog">Blog Settings</a></li>
+							<li><a href="#post">Post Settings</a></li>
+							<li><a href="#error">Error Page Settings</a></li>
+							<li><a href="#cpt">Breadcrum Setting for custom post type</a></li>
+							<li><a href="#doctor">Doctor</a></li>
+							<li><a href="#departments">Departments</a></li>
+							<li><a href="#gallery">Gallery</a></li>
+							<li><a href="#testimonial">Testimonial</a></li>
+							<li><a href="#vc-elements"> Elementor elements</a></li>
+							<li><a href="#css-class">Built-in CSS Classes (Advanced)</a></li>
+							<li><a href="#widgets">Custom Widgets</a></li>
+							<li>
+								<a href="#special">Special Tutorials</a>
+								<ul>
+									<li><a href="#s-contact">Setting up Contact Form</a></li>
+									<!-- <li><a href="#onepage">Creating One Page Navigation</a></li> -->
+									<li><a href="#translate">Translating Theme</a></li>
+									<li><a href="#update">Updating Theme</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#trouble">Troubleshooting</a>
+								<ul>
+									<li><a href="#t-demo">Demo Content installation failed</a></li>
+									<li><a href="#t-error">404 Error in all pages</a></li>
+								</ul>
+							</li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-right">
+					<section id="requirements">
+						<h1 class="title">Medilink | Responsive WordPress Theme Documentation</h1>
+						<h2>1| Requirements</h2>
+						<p>You need at least WordPress version 4.9+ installed for this theme to work properly. It is strongly recommended that you always use the latest stable version of Wordpress to ensure all known bugs and security issues are fixed. Other requirements:</p>
+						<ul>
+							<li>PHP version 5.3 or greater. But for maximum speed, we recommend to use PHP version 7+.</li>
+							<li>MySQL version 5.0.15 or greater.</li>
+						</ul>
+					</section>
+					<section id="installation">
+						<h2>2| Theme Installation</h2>
+						<p>When you are ready to install a theme, you must first upload the theme files and then activate the theme itself. The theme files can be uploaded in two ways:</p>
+						<ul>
+							<li><b>FTP Upload:</b> Using your FTP client, upload the non-zipped theme folder into the /wp-content/themes/ folder on your server.</li>
+							<li><b>WordPress Upload:</b> Navigate to <b>Appearance -> Themes -> Add New -> Upload</b>. Go to browse, and select the zipped theme folder. Hit "Install Now" and the theme will be uploaded and installed.</li>
+						</ul>
+						<p>Once the theme is uploaded, you need to activate it. Go to <b>Appearance -> Themes</b> and activate your chosen theme.</p>
+						<p>After that you need to install and activate the following pre-packaged plugins:</p>
+						<ol class="plugins">
+							<li>Medilink Core: <span>Required and must install plugin.</span></li>
+							<li>RT Framework: <span>Required and must install plugin.</span></li>
+							<li>Redux Framework: <span>Required and must install plugin.</span></li>
+							<li>Breadcrumb NavXT: <span>Required and must install plugin.</span></li>
+							<li>RT Demo Importer: <span>Required if you want to import demo contents. You can deactivate it after demo is imported.</span></li>
+							<li>Elementor: <span>Recommended. Page builder plugin.</span></li>
+							<li>WP Extended Search: <span>Recommended. Install if you want to include/exclude certain post types in search result page.</span></li>
+							<li>Contact Form 7: <span>Optional. Install if you want to use contact form.</span></li>
+							<li>WooCommerce: <span>Optional. Install if you want ecommerce/store functionality.</span></li>
+							<li>WP Retina 2x: <span>Optional. Install if you want your site to be retina ready.</span></li>
+							<li>YITH WooCommerce Quick View: <span>Optional. Install if you want quickview icon over products.</span></li>
+							<li>YITH WooCommerce Wishlist: <span>Optional. Install if you want wishlist icon over products.</span></li>
+						</ol>
+						<p><b>N.B:</b> All plugins must be installed and activated if you want your site to look exactly like demo.</p>
+						<p>To install these plugins, navigate to <b>Appearance -> Install Plugins</b> and start installation.</p>
+						<p><img alt="" src="images/1.jpg"></p>
+					</section>
+					<section id="demo">
+						<h2>3| Importing Demo contents</h2>
+						<p>Want to build your site like the demo? You can do it by only one click!</p>
+						<p style="color:red;"><i><b>** Note: Before proceeding, please remember that when you are done with the demo import, all existing settings and contents will be removed and replaced by the demo contents. So it is highly recommended that you should only do this in fresh site. **</b></i></p>
+						<p>First please make sure that Medilink Parent Theme is activated on your site.</p>
+						<p>From Admin menu, navigate to <b>Tools -> Demo Content Install</b>. Or alternatively,  navigate to <b>Plugins -> RT Demo Importer -> Install Demo Contents</b>.</p>
+						<p><img alt="" src="images/40.png"></p>
+						<p class="mt30">In this page, Click on the <b>Install</b> button for installing the demo.</p>
+						<p><img alt="" src="images/2.jpg"></p>
+						<p class="mt30">It will take some time for importing the demo contents. <i>Please note: Some images are replaced with a placeholder image because of licensing.</i></p>
+						<p>After importing demo data, please update your permalink. To update permalink, navigate to <b>Settings -> Permalink</b> and then click on <b>Save Settings</b> button.</p>
+						<p><img alt="" src="images/r3.jpg"></p>
+						<p class="mt30">If you face any issue, check the Troubleshooting section from <a href="#t-demo">here</a>.</p>
+					</section>
+
+			<section id="demo-manual">
+				<h2>3.2| Manual Import</h2>
+				<p>We have provided some sample contents inside "sample-data" directory which comes with your theme package. You have to import those contents.</p>
+				<ul>
+					<li>
+						<b>Importing Contents</b>: From Admin menu, navigate to <b><i>Tools->Import</i></b>. From there select the "WordPress" and then run the importer(It will ask you to install the importer before if this is your first time). In the next step when file uploading option appears, select the "contents.xml" file from sample-data and start uploading. In next step select the checkbox saying "Download and import file attachments" and click on "Submit". Then it'll start uploading contents eg. pages, posts etc.
+						<p class="mt20"><img src="images/78.jpg"></p>
+						<p class="mt20"><img src="images/80.jpg"></p>
+						<p class="mt20"><img src="images/81.jpg"></p>
+					</li>
+					<li><b>Importing Widgets</b>: You can import widgets using plugin <a href="https://wordpress.org/plugins/widget-importer-exporter/">Widget Importer &amp; Exporter</a>. After installing this plugin, navigate to <b><i>Tools->Widget Importer &amp; Exporter</i></b>. In the next step when file uploading option appears, select the "widgets.wie" file from sample-data and start importing.<p class="mt20"><img src="images/82.jpg"></p></li>
+					<li><b>Importing Sliders</b>: From Admin menu, navigate to <b><i>LayerSlider WP</i></b>, then click on "Import Sliders" option. In the next step when file uploading option appears, select the "slider.zip" file from sample-data and start importing.<p class="mt20"><img src="images/83.jpg"></p><p class="mt20"><img src="images/84.jpg"></p></li>
+					<li><b>Importing options</b>: First open the file "options.json" in any text editor and copy the whole contents. Now from Admin menu, navigate to <b><i>Appearance -> Medilink Options</i></b>, then go to <b><i>import/Export</i></b> tab. From there click on "Import from file" option. A textbox will appear, paste the copied contents on that textbox and click on "Import" button.<p class="mt20"><img src="images/2.jpg"></p></li>
+					<li><b>More Configurations</b>: This theme comes with many pre-packaged plugins eg. Contact Form 7, Breadcrumb NavXT, AddToAny Share Buttons etc . You should also configuire these plugin settings too as per your needs.</li>
+				</ul>
+			</section>
+
+
+				<section id="features"></section>
+				<section id="colors">
+					<h2>4.1| Sitewise Colors</h2>
+					<p>From Admin menu, navigate to <b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>Colors</i></b> tab.</p>
+					<p>Choose your preferred primary and secondary color from the color palette.</p>
+					<p><img alt="" src="images/3.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Save Changes</i></b> button.</p>
+				</section>
+				<section id="logo">
+					<h2>4.2| Logo</h2>
+					<p>From Admin menu, navigate to <b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>Header</i></b> tab.</p>
+					<p><img alt="" src="images/5.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Save Changes</i></b> button.</p>
+				</section>
+				<section id="preloader">
+					<h2>4.3| Preloader</h2>
+					<p>From Admin menu, navigate to <b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>General</i></b> tab</p>
+					<p>Here you can find the option for enabling/disabling "Preloader" option. Also you can upload your custom preloader image. When uploading image, make sure it's a transparent GIF image.</p>
+					<p><img alt="" src="images/59.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Save Changes</i></b> button.</p>
+				</section>
+				<section id="toparrow">
+					<h2>4.4| Back to Top Arrow</h2>
+					<p>From Admin menu, navigate to <b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>General</i></b> tab</p>
+					<p>Here you can find the option for enabling/disabling "Back to Top Arrow" option. Choose your preferred option</p>
+					<p><img alt="" src="images/4.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Save Changes</i></b> button.</p>
+				</section>
+				<section id="header">
+					<h2>4.5| Header and Top Bar</h2>
+					<p>To change the Header related settings, please go to <b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>Header</i></b> tab. Following features are available:</p>
+					<ul>
+						<li>There are total 5 Header Layouts. You can choose your preferred layout combinations from here. You can change this settings from any individual pages too.</li>
+						<li>You have options to enable/disable Sticky Header.</li>
+					</ul>
+					<p class="mt30"><img alt="" src="images/7.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Save Changes</i></b> button.</p>
+				</section>
+				<section id="menu">
+					<h2>4.6| Menu</h2>
+					<p>To customize the menu settings, navigate to <b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>Main Menu</i></b> tab.</p>
+					<p>From here you can change the menu display behaviour. You can set menu fonts and Mobile menu Width as well.</p>
+					<p><img alt="" src="images/6.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Save Changes</i></b> button.</p>
+				</section>
+				<section id="megamenu">
+					<h2>4.7| Multi Column Menu</h2>
+					<p>Multi column menu looks like this:</p>
+					<!-- <p><img alt="" src="images/54.jpg"></p> -->
+					<p class="mt30">To make any menu item multi column, you have to add some specific classes in the parent menu item. Here's an example:</p>
+					<p><img alt="" src="images/55.png"></p>
+					<p class="mt30">Here I used css class <b>mega-menu</b> which turns the submenu items into multi column. Also i used another class <b>hide-header</b> which hides the title "Column 1" and "Column 2" inside menu.</p>
+					<p class="mt30">NB: If you can't see the field "CSS Classes", you have to enable it first. To do this, go to the top and follow this screenshot below: </p>
+					<p><img alt="" src="images/56.jpg"></p>
+				</section>
+				
+				<section id="footer">
+					<h2>4.9| Footer</h2>
+					<p>To change the footer settings, navigate to <b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>Footer</i></b> tab. It looks like this:</p>
+					<p><img alt="" src="images/9.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Save Changes</i></b> button.</p>
+					<p class="mt30">To set up footer widgets, navigate to <b><i>Appearance -> Widgets</i></b>. Here you can find available footer widget areas.</p>
+					<p><img alt="" src="images/widget-image.jpg"></p>
+				</section>
+				<section id="typo">
+					<h2>4.10| Typography</h2>
+					<p>You can change the typography of Body and Headers. To do this, go to <b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>Typography</i></b> tab.</p>
+					<p><img alt="" src="images/11.jpg"></p>
+					<p>After changing the Typography settings, Click on <b><i>Save Changes</i></b> button.</p>
+				</section>
+				
+				<section id="layouts">
+					<h2>5| Layout Settings</h2>
+					<p>From here you can set default layouts for pages, blog, posts etc. You can find this settings on <b><i>Appearance -> Theme Options</i></b> and then <b><i>Layout Defaults</i></b> tab.</p>
+					<p>This settings is similar for all submenus under "Layout Defaults", so for convenience i'll just describe for one item (<b>Pages</b>).</p>
+					<p><img alt="" src="images/20.jpg"></p>
+					<div class="mt30"></div>
+					<p><b>Layout:</b> You can choose various layout types for pages eg. Left Sidebar, Right Sidebar, Full Width.</p>
+					<p><b>Content Padding Top:</b> Paddings at the top of page contents. (see image below)</p>
+					<p><b>Content Padding Bottom:</b> Paddings at the bottom of page contents.(see image below)</p>
+					<p><b>Banner:</b> You can enable or disable banner (see image below).</p>
+					<p><b>Breadcrumb:</b> You can enable or disable breadcrumb (see image below).</p>
+					<p><b>Banner Background Type:</b> You can choose weather you want a background image or background color for banner.</p>
+					<p><b>Banner Background Color/Image:</b> You can select the banner background color or image from here.</p>
+					<p><img alt="" src="images/17.jpg"></p>
+					<p><img alt="" src="images/17a.jpg"></p>
+				</section>
+				<section id="post-single">
+					<h2>6| Layout Settings for Individual Post Types</h2>
+					<p>You can override the above settings for individual post types. For any post types (like Posts, Pages, Services, Team, etc), when you go to <b><i>Add New</i></b> or <b><i>Edit</i></b> page, you can find similar settings like above under the "Layout Settings" box. If you change any settings from here, this will take priority. If you choose default, settings from the <b><i>Theme Options -> Layout Defaults</i></b> (described above) will be used.</p>
+					<p><img alt="" src="images/single-post-layout.jpg"></p>
+				</section>
+				<section id="blog">
+					<h2>7| Blog/posts Settings</h2>
+					<p>Navigate to <b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>Post Settings</i></b> tab. From here you can change Blog/Archive related settings.</p>
+					<p><img alt="" src="images/62.jpg"></p>
+					<p class="mt30">Also you can upload an Inner Page Banner Image<b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>General</i></b> tab. It'll look like this:</p>
+					<p><img alt="" src="images/no-image-preview.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Save Changes</i></b> button.</p>
+				</section>
+				<section id="post">
+					<h2>8| Post Settings</h2>
+					<p>Navigate to <b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>Post Settings</i></b> tab. From here you can change settings for single post .</p>
+					<p><img alt="" src="images/63.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Save Changes</i></b> button.</p>
+				</section>
+				<section id="error">
+					<h2>9| Error Page Settings</h2>
+					<p>Navigate to <b><i>Appearance -> Theme Options</i></b>. Then go to <b><i>Error Page Settings</i></b> tab. Settings will look like this:</p>
+					<p><img alt="" src="images/21.jpg"></p>
+					<p><img alt="" src="images/22.jpg"></p>
+					
+				</section>
+				
+				<section id="cpt">
+					<h2>10| Breadcrum Setting for custom post type</h2>
+					<p class="mt30">You can set up root/archive pages for these Custom Post Types which will be used as breadcrumb. To do this, navigate to <b><i>Settings -> Breadcrumb NavXT</i></b>. In this page, Click on the <b><i>Post Types</i></b> tab.</p>
+					<p>Then select the root pages for Chef, Recipe and Event like the image below. It'll be used as archive page.</p>
+					<p><img alt="" src="images/39.jpg"></p>
+				</section>
+				
+				<section id="doctor">
+					<h2>11| Doctors</h2>
+					<p>You can add Doctor members from <b><i>Doctors</i></b> menu. For each Doctor you'll see the following settings:</p>
+					<p><img alt="" src="images/14.jpg"></p>
+					<p class="mt30">For displaying doctor, we have created Elementor elements for you. From Elementor, Go to <b><i>RadiusTheme Elements</i></b> Section, here you'll see <b><i>Medilink: doctor</i></b> element.</p>
+					<p><img alt="" src="images/23.jpg"></p>
+				</section>
+				<section id="departments">
+					<h2>12| Medilink Departments</h2>
+					<p>You can add class from <b><i>departments</i></b> menu. For each class you'll see the following settings:</p>
+					<p><img alt="" src="images/27.jpg"></p>
+					<p class="mt30">For displaying Event, we have created  Elementor elements for you. From  Elementor elements, Go to <b><i>RadiusTheme Elements</i></b> Section, here you'll see <b><i>class</i></b> and <b></b> element.</p>
+					<p><img alt="" src="images/61.jpg"></p>
+				</section>
+				<section id="gallery">
+					<h2>13| Gallery</h2>
+					<p>You can add Gallery from <b><i>Gallery</i></b> menu. For each gallery you'll see the following settings:</p>
+					<p><img alt="" src="images/26.jpg"></p>
+					<p class="mt30">For displaying gallery, we have created  Elementor elements for you. From  Elementor elements, Go to <b><i>RadiusTheme Elements</i></b> Section, here you'll see <b><i>Gallery</i></b> element. <b>2 Style of gallery layout</b> has been added</p>
+					<p><img alt="" src="images/49.jpg"></p>
+				</section>
+				<section id="testimonial">
+					<h2>14 | Testimonial</h2>
+					<p>You can add testimonials from <b><i>Testimonials</i></b> Elementor. For each testimonial you'll see the following settings:</p>
+					<p><img alt="" src="images/49b.jpg"></p>
+					<p class="mt30">For displaying testimonial, we have created  Elementor elements for you. From  Elementor elements, Go to <b><i>RadiusTheme Elements</i></b> Section, here you'll see <b><i>Testimonial</i></b> element. <b>2 Style of testimonial layout</b> has been added</p>
+					<p><img alt="" src="images/49a.jpg"></p>
+				</section>
+				<section id="vc-elements">
+					<h2>14|  Elementor elements</h2>
+					<p>We have created several  Elementor elements for you. You can find them from <b><i>Medilink</i></b> tab in the  Elementor elements</p>
+					<p><img alt="" src="images/24.jpg"></p>
+				</section>
+				
+				<section id="css-class">
+					<h2>16| Built-in CSS Classes (Advanced)</h2>
+					<p>You can use the following built-in css classes if needed:</p>
+					<ul class="special-list">
+						<li><span>bg-primary</span>: Set Primary Background color</li>
+						<li><span>bg-primary70</span>: Set Primary Background width opacity 70% color</li>
+					</ul>
+				</section>
+			<section id="widgets"></section>
+			<h2>17 | Custom Widgets</h2>
+			<p>You can use the following Widget in any place of your theme ( like in footer & sidebar ). These are custom made</p>
+			<p><img alt="" src="images/72.jpg"></p>
+			
+			
+		<section id="special"></section>
+		<section id="s-contact">
+			<h2>18.1| Setting up Contact Form</h2>
+			<p>We are using plugin "Contact Form 7" for contact functionality. You can see their documentation for better understanding.</p>
+			<p>If you don't want to go through all the troubles to check their documentation and just want to use the default contact form we provided with this theme, <b>please at least set up the default emails in contact form settings. (Because if you don't do that, all form submission emails will come to us instead of you).</b> To do that, please follow the steps below:</p>
+			<p class="mt30"><b><u>Step 1:</u></b> Navigate to <b><i>Contact</i></b>, and then click on <b><i>Contact form 1</i></b> link.</p>
+			<p class="mt10"><img alt="" src="images/contact-form.jpg"></p>
+			<p class="mt30"><b><u>Step 2:</u></b> From this page, click on <b><i>Mail</i></b> tab. Here you should set your own email address where you want to receive user submitted forms. Then click on save button.</p>
+			<p class="mt10"><img alt="" src="images/58.jpg"></p>
+			<p class="mt30"><b><u>Step 3:</u></b> Please submit some dummy forms from Contact page to make sure that it's working properly.</p>
+		</section>
+		
+		<section id="translate">
+			<h2>18.2| Translating Theme</h2>
+			<p>You can translate this theme to another language easily. You actually have to translate two things for your website to work properly: "<b>Medilink</b>" theme and "<b>Medilink Core</b>" plugin. This plugin plays a major role in theme functionality, so if you don't translate this plugin along with the theme you can't be able to get the full translation.</p>
+			<p>There are many tools available for translation. But the easiest way is to use plugin "<b>Loco Translate</b>". Using this plugin, you can literally translate any WordPress themes or plugins if it supports translation.</p>
+			<p style="color:red;"><i>** Note: Please remember, if you update the theme later your translations might be gone if they are stored inside theme/plugin. So please keep a backup of <b>Medilink</b> theme and <b>Medilink Core</b> plugin first before updating theme. **</i></p>
+			<p>Here's a quick video tutorial about how to use <b>Loco Translate</b>:</p>
+			<p><iframe width="640" height="360" alt="" src="https://www.youtube.com/embed/3Fohy96uSzY" frameborder="0" allowfullscreen></iframe></p>
+		</section>
+		<section id="update">
+			<h2>18.3| Updating Theme</h2>
+			<p>Occationally we provide updates which includes new features and bugfixes. Updating WordPress theme is standard WordPress functionality. There are few ways to update WordPress theme. You can follow any of the methods described below:</p>
+			<p style="color:red;"><i><b>** Note: Before updating, make sure to keep a backup of your website to be in safe side. **</b></i></p>
+			<p><b><u>Method 1: Automatic Update by Using Envato Market Plugin</u></b></p>
+			<ol>
+				<li>Install and activate the "Envato Market" plugin manually. Here's the plugin zip file: <a href="http://envato.github.io/wp-envato-market/dist/envato-market.zip">http://envato.github.io/wp-envato-market/dist/envato-market.zip</a></li>
+				<li>From WordPress Admin Panel, navigate to <b>"Envato Market"</b> menu.</li>
+				<li>
+				</li>
+				<li>After completed the above steps successfully, Navigate to <b>Appearance -> Themes</b>. Here you'll see an "Update now" link beside your theme. Click on that link and your theme will be updated automatically.</li>
+			</ol>
+			<p>Here's a quick video tutorial explaining this method:</p>
+			<p><iframe width="640" height="360" alt="" src="https://www.youtube.com/embed/fhRFhXnuP1I" frameborder="0" allowfullscreen></iframe></p>
+			<p class="mt30"><b><u>Method 2: By Uploading zip File</u></b></p>
+			<ol>
+				<li>From WordPress Admin Panel, Navigate to <b>Appearance -> Themes</b>.</li>
+				<li>Activate any other theme (eg. Twenty Seventeen) than the current one.</li>
+				<li>Delete <b><i>Medilink</i></b> Theme.</li>
+				<li>Now you have to upload the updated theme zip file. To do this, Navigate to <b>Appearance -> Themes -> Add New -> Upload</b>. Go to browse, and select the zipped theme folder. Hit "Install Now" and the theme will be uploaded and installed.</li>
+			</ol>
+			<p><b><u>Method 3: By FTP</u></b></p>
+			<ol>
+				<li>Using your FTP client, navigate to "/wp-content/themes/" folder on your server and delete the "Medilink" folder from there.</li>
+				<li>Now upload the latest non-zipped theme folder into that "/wp-content/themes/" folder .</li>
+			</ol>
+		</section>
+	<section id="trouble"></section>
+	<section id="t-demo">
+		<h2>19.1| Demo Content installation failed</h2>
+		<p>This is a hosting issue. In most hostings demo installation will work fine. But some hostings block certain permissions which may cause this issue. If this happens to you, you can contact your hosting provider or alternatively send a support request to <a href="mailto:support@radiustheme.com">support@radiustheme.com</a> and we will help you to fix this.</p>
+	</section>
+	<section id="t-error">
+		<h2>19.2| 404 Error in all pages</h2>
+		<p>If you face this type of issue, please update your permalink. To update permalink, navigate to <b>Settings -> Permalink</b> and then click on <b>Save Settings</b> button.</p>
+		<p><img alt="" src="images/r3.jpg"></p>
+		
+	</section>
+	<section id="contact">
+		<h2>20| Contact</h2>
+		<p>If you face any issue, please contact at <a href="mailto:support@radiustheme.com">support@radiustheme.com</a></p>
+		<p>Thank you for purchasing our theme.</p>
+		<p class="mt50"></p>
+	</section>
+</div>
+</div>
+<script src="files/js/jquery.min.js"></script>
+<script src="files/vendor/scrollbar/jquery.mCustomScrollbar.min.js"></script>
+<script src="files/js/jquery.meanmenu.min.js"></script>
+<script src="files/js/main.js"></script>
+</body>
+</html>

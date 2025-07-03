@@ -1,0 +1,37 @@
+<wpml-config>
+    <admin-texts>
+        <key name="medilink">
+            <key name="phone" />
+            <key name="email" />
+            <key name="address" />
+            <key name="copyright_color" />
+            <key name="header_btn_txt" />
+            <key name="error_title" />
+            <key name="error_text1" />
+            <key name="error_text2" />
+            <key name="error_buttontext" />
+        </key>
+    </admin-texts>
+    <custom-types>
+        <custom-type translate="1">medilink_doctor</custom-type>       
+        <custom-type translate="1">medilink_departments</custom-type>
+        <custom-type translate="1">medilink_gallrey</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">medilink_doctor_category</taxonomy>
+        <taxonomy translate="1">medilink_departments_category</taxonomy>
+        <taxonomy translate="1">medilink_gallrey_category</taxonomy>       
+    </taxonomies>
+    <custom-fields>
+       <custom-field action="translate">medilink_doctor_about_title</custom-field>     
+       <custom-field action="translate">medilink_doctor_about</custom-field>     
+       <custom-field action="translate">medilink_designation</custom-field>     
+       <custom-field action="translate">medilink_degree</custom-field>     
+       <custom-field action="translate">medilink_phone</custom-field>     
+       <custom-field action="translate">medilink_offic</custom-field>     
+       <custom-field action="translate">medilink_email</custom-field>     
+       <custom-field action="translate">medilink_schedule_title</custom-field>     
+       <custom-field action="translate">medilink_skill_title</custom-field>     
+       <custom-field action="translate">medilink_experienced_title</custom-field>      
+   </custom-fields>
+</wpml-config>

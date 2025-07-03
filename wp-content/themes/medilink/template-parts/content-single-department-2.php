@@ -1,0 +1,106 @@
+<?php
+/**
+ * @author  RadiusTheme
+ * @since   1.0
+ * @version 1.0
+ */
+namespace radiustheme\Medilink;
+use radiustheme\medilink\Helper;
+$medilink  = MEDILINK_THEME_PREFIX;
+$cpt     = MEDILINK_THEME_CPT_PREFIX;  
+$id                         = get_the_id();
+$departments                = Helper::get_departments();  
+$_our_pricing_plan_title    = get_post_meta( $id, "{$cpt}_our_pricing_plan_title", true );
+$_department_services       = get_post_meta( $id, "{$cpt}_department_services", true );
+$_doctors                   = get_post_meta( $id, "{$cpt}_doctor", true );
+$doctors                    = Helper::get_departments_doctor($_doctors);  
+$_emergency_cases           = get_post_meta( $id, "{$cpt}_emergency_cases", true );   
+$_opening_hour              = get_post_meta( $id, "{$cpt}_opening_hour", true ); 
+?>   
+<div class="single-departments-box-layout1">
+    <div class="single-departments-img">
+       <?php 
+        if ( has_post_thumbnail() ){
+            the_post_thumbnail( 'full');
+        } ?>
+    </div>
+    <div class="item-content">
+        <div class="item-content-wrap">
+            <h3 class="item-title title-bar-primary5"><?php the_title();?></h3>
+            <?php the_content();?>
+        </div>
+        <?php  if(!empty($_department_services)){ ?> 
+            <div class="row">
+                <div class="col-12">
+                    <div class="item-cost">
+                        <h3 class="item-title title-bar-primary7"><?php echo esc_html($_our_pricing_plan_title); ?></h3>
+                        <ul>
+                            <?php foreach ($_department_services as $services) {  ?> 
+                                <li><?php echo esc_html($services['services_name']); ?><span><?php echo esc_html($services['services_price']); ?></span></li>                                   
+                            <?php } ?>                               
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+        <?php  if(!empty($_doctors)){ ?>  
+                <div class="item-specialist-wrap">
+                     <h3 class="item-title title-bar-primary7"><?php echo esc_html__( 'Meet Our Doctors', 'medilink' ); ?></h3>
+                </div>    
+                <div class="row  margin-b-20"> 
+                  <?php  foreach ( $doctors as $doctor ):
+                    $thumb_size      = "{$medilink}-size6";
+                    $did             = $doctor->ID;
+                    $_designation    = get_post_meta( $did, "{$cpt}_designation", true );
+                    $_degree         = get_post_meta( $did, "{$cpt}_degree", true );
+                    $_phone          = get_post_meta( $did, "{$cpt}_phone", true );                                                                
+                    ?>                          
+                    <div class="col-xl-6 col-lg-12 col-12">
+                        <div class="item-specialist aj-departments">
+                            <div class="media media-none--xs">
+                                <div class="item-img">
+                                    <?php echo get_the_post_thumbnail( $did , $thumb_size, array( 'class' => 'img-fluid media-img-auto' ) );?>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="item-title"><a href="<?php echo esc_url(get_the_permalink($did));?>"> <?php echo esc_html(get_the_title( $did));?></a></h4>
+                                    <span class="degree"><?php echo esc_html($_degree); ?></span>
+                                    <p class="designation"><?php echo esc_html($_designation); ?></p>
+                                    <a href="<?php echo the_permalink($did);?>" class="item-btn-txt"><?php echo esc_html__( 'Make an Appointment', 'medilink' ); ?></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                        
+                   <?php endforeach; ?>
+                </div>
+            <?php } ?>
+                <div class="item-specialist-wrap">
+                    <h3 class="item-title title-bar-primary7"><?php echo esc_html__( 'Opening Hours', 'medilink' ); ?></h3>
+                </div>   
+                    <div class="row">                
+                         <?php  if(!empty($_opening_hour)){ ?>                        
+                         <div class="sidebar-widget-area sidebar-break-md col-xl-6 col-lg-6 col-12 no-equal-item">                   
+                            <div class="widgets widget-schedule">                            
+                                    <ul>
+                                        <?php foreach ($_opening_hour as $opening_hour) {  ?> 
+                                            <li><span class="bold5"><?php echo esc_html($opening_hour['hours_label']); ?> </span><?php echo esc_html($opening_hour['hours']); ?></li>
+                                        <?php } ?>                               
+                                    </ul>                    
+                            </div>
+                        </div>        
+                          <?php } ?>
+                        <?php  if(!empty($_emergency_cases == "")){ ?>  
+                        <div class="sidebar-widget-area sidebar-break-md col-xl-6 col-lg-6 col-12 no-equal-item">
+                            <div class="widgets widget-call-to-action-light">
+                                <div class="media">
+                                       <img width="44" height="48" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/figure6.png" alt="<?php esc_html_e( 'figure', 'medilink' ); ?>">
+                                    <div class="media-body space-sm">
+                                        <h4><?php echo esc_html__( 'Emergency Cases', 'medilink' ); ?></h4>
+                                        <span><?php echo esc_html($_emergency_cases); ?></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                        <?php } ?>                     
+                </div> 
+        </div>
+    </div> 

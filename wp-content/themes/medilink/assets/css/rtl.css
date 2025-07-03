@@ -1,0 +1,154 @@
+/*-------------------------------------
+#. General
+---------------------------------------*/
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+.site-header .main-navigation ul li ul.sub-menu li.menu-item-has-children::after {
+  content: "\f104";
+}
+.site-header .main-navigation ul li.mega-menu > ul.sub-menu li::after {
+  content: '';
+}
+.additional-menu-area .sidenav ul li a::before {
+  font-family: 'FontAwesome';
+  content: "\f104";
+}
+.additional-menu-area .sidenav ul li a::after {
+  content: none;
+}
+.mean-container a.meanmenu-reveal {
+  left: 0  !important;
+  right: auto !important;
+}
+.entry-header .entry-meta ul li {
+  vertical-align: top;
+  line-height: 1.3;
+}
+.entry-header .entry-meta ul li i {
+  text-align: right;
+}
+.entry-header .entry-meta ul li .rtin-sep {
+  padding: 0 5px;
+  color: #b1b1b1;
+}
+.entry-header .entry-meta ul li a,
+.entry-header .entry-meta ul li i,
+.entry-header .entry-meta ul li span {
+  float: right;
+  line-height: 1.3;
+}
+.entry-footer .tags a,
+.entry-footer .tags span {
+  float: right;
+}
+.entry-footer .tags .rtin-sep {
+  color: #707070;
+  padding: 0 5px;
+}
+.pagination-area .fa-angle-double-right::before {
+  content: "\f100";
+}
+.pagination-area .fa-angle-double-left::before {
+  content: "\f101";
+}
+.event-single .event-info ul li span {
+  float: right;
+}
+.contact-us-form {
+  text-align: right;
+}
+.contact-us-form .form-group .form-control {
+  text-align: right;
+}
+.contact-us-form .wpcf7-submit {
+  float: right;
+}
+div.wpcf7-response-output {
+  text-align: right;
+}
+.search-form .custom-search-input button.btn {
+  padding: 1.2rem 0;
+}
+/*-------------------------------------
+#. WooCommerce
+---------------------------------------*/
+.woocommerce ul.products li.product .button:before {
+  font-size: 28px;
+  margin-left: 0;
+}
+.shop-box-layout1 .item-img .shop-action-items li a i:before {
+  margin: 0;
+}
+.woo-shop-top .view-mode,
+.woocommerce .woo-shop-top .view-mode {
+  float: right;
+}
+.woocommerce div.product .product-meta .sku-label,
+.woocommerce div.product .product-meta span,
+.woocommerce div.product .product-meta a {
+  float: right;
+}
+.woocommerce div.product .product-meta .rtin-sep {
+  padding: 0 5px;
+  color: #666666;
+}
+.woocommerce div.product .product-meta .rtin-label {
+  margin-left: 5px;
+}
+.owl-wrap .fa-angle-left:before {
+  content: "\f105";
+}
+.owl-wrap .fa-angle-right:before {
+  content: "\f104";
+}
+.rt-vc-video .fa-play {
+  content: "\f04a";
+}
+.rt-vc-research-3 .rtin-item .rtin-holder .rtin-title a i:before {
+  content: "\f104";
+}
+.rev_slider_wrapper,
+.rev_slider_wrapper * {
+  direction: ltr;
+}
+.wpcf7-form-control-wrap.time:after{
+  right: 11px;
+  left: auto;
+}
+.select2-container--classic .select2-selection--single .select2-selection__arrow{
+  right: 10px;
+  left: auto;
+}
+.appointment-box-layout1.light h3.title-bar-primary{
+  text-align: right;
+}
+.rt-slider-thumb-area .slick-slider .slick-list, 
+.rt-slider-thumb-area .slick-slider .slick-track{
+  transform: translate3d(240px, 0px, 0px);
+}
+.main-banner-box1 .item-button .item-btn i {
+  transform: rotate(180deg);
+}
+.feature-box-layout8 .item-content .item-button .item-btn i {
+  transform: rotate(180deg);
+}
+.loading-button .item-btn i {
+  transform: rotate(180deg);
+}
+.blog-box-layout2 .item-content .post-actions-wrapper ul li .item-btn i {
+  transform: rotate(180deg);
+}
+.call-to-action-box-layout6 .item-btn i {
+  transform: rotate(180deg);
+}
+.service-box-layout3 .item-button .item-btn i {
+  transform: rotate(180deg);
+}
+.blog-box-layout8 .item-content .post-actions-wrapper-2 .item-btn i {
+  transform: rotate(180deg);
+}
+.site-wrp .rtin-button .item-btn i {
+  transform: rotate(180deg);
+}
